@@ -1,9 +1,18 @@
 using System;
+using System.Collections.Generic;
 
-class Program
+namespace Learning02
 {
-    static void Main(string[] args)
+    public class Program
     {
-        Console.WriteLine("Hello Learning02 World!");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Inside the other program class");
+            List<int> myList = new List<int>();
+            myList.Add(121);
+            myList.Add(2021);
+            myList.Remove(121);
+
+        }
     }
 }

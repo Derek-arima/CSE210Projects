@@ -1,9 +1,37 @@
 using System;
 
-class Program
+
+namespace Prep3
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello Prep3 World!");
+        static void Main(string[] args)
+        {
+            Random randomNumber = new Random();
+            int number = randomNumber.Next(1,100);
+            int guess = -1;
+            do
+            {
+                Console.Write("What is your guess?");
+                string guessString = Console.ReadLine();
+                guess = int.Parse(guessString);
+
+                if (guess > number)
+                {
+                    Console.Write("Higher");
+                }
+
+                else if (guess < number)
+                {
+                    Console.Write("Lower");
+                }
+
+                else
+                {
+                    Console.Write("You guessed it!");
+                }
+            }while (guess != number);
+
+        }
     }
 }

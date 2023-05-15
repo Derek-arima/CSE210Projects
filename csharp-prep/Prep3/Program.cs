@@ -18,12 +18,12 @@ namespace Prep3
 
                 if (guess > number)
                 {
-                    Console.Write("Higher");
+                    Console.Write("Lower\n");
                 }
 
                 else if (guess < number)
                 {
-                    Console.Write("Lower");
+                    Console.Write("Higher\n");
                 }
 
                 else
